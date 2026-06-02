@@ -70,6 +70,7 @@ MonoBehaviour:
   jumpDirectionSpeed: 0
   canWalkLeft: 1
   canWalkRight: 1
+  imunityFrames: 0
   hasRunningShoes: 0
   isDead: 0
   maxJumpTime: 10
@@ -81,12 +82,18 @@ MonoBehaviour:
   staminaSpeed: 0.5
   staminaRechargeSpeed: 0.2
   invertControlls: 0
+  canMove: 1
   camSlerp: 0.03
   camDirectionMultiplier: 1.5
   camTarget: {fileID: 0}
+  camOffset: {x: 0, y: 0}
+  useArcade: 0
   walkInput: {fileID: -8998490435754278989, guid: 5f8c9be0ed5ee5d42935e98991aac03a, type: 3}
   jumpInput: {fileID: 712501135487282935, guid: 5f8c9be0ed5ee5d42935e98991aac03a, type: 3}
   sprintInput: {fileID: 4302315626291578450, guid: 5f8c9be0ed5ee5d42935e98991aac03a, type: 3}
+  arcadeWalkInput: {fileID: -8005781391281026371, guid: 5f8c9be0ed5ee5d42935e98991aac03a, type: 3}
+  arcadeJumpInput: {fileID: -274802568839797795, guid: 5f8c9be0ed5ee5d42935e98991aac03a, type: 3}
+  arcadeSprintInput: {fileID: 3685940834842421561, guid: 5f8c9be0ed5ee5d42935e98991aac03a, type: 3}
   cameraTransform: {fileID: 0}
   staminaSliderObj: {fileID: 0}
   deadSpriteRenderer: {fileID: 8719363280374698107}
@@ -117,7 +124,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard
-  m_DefaultActionMap: Player
+  m_DefaultActionMap: 929239cb-81fe-4c51-988e-778857c053cb
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!212 &3370818180301881168
